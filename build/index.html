@@ -1,18 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/output.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/output.css" />
+  </head>
+  <body class="h-screen w-full bg-Magnolia ">
     <header></header>
-    <main>
-        <section class="flex flex-col justify-center items-center w-full h-screen">
-            <div class="w-44 h-44 rounded-full shadow-xl bg-red-400 "></div>
-        </section>
+    <main class="flex justify-center w-full hfu">
+      <section class="flex justify-center items-center h-screen w-4/5  bg-white ">
+              <div class="w-80  h-4/5  info flex flex-col pl-4 py-5   gap-8 ">
+                  <style>
+                      .info{
+                          background-image: url('./images/bg-sidebar-desktop.svg');
+                          background-repeat: no-repeat;
+                      }
+                  </style>
+                <div class="flex gap-4 ">
+                  <div class="bg-Light_blue  rounded-full w-10 h-10 flex justify-center items-center shadow-sm "><p class="text-blue-300 font-semibold text-xl ">1</p></div>
+                  <div>
+                    <p class="font-semibold text-lg text-Cool_gray capitalize">step 1</p>
+                    <p class="uppercase text-sm text-White  font-medium ">your info</p>
+                  </div>
+                </div>
+                <div class="flex gap-4 ">
+                  <div class="bg-Light_blue  rounded-full w-10 h-10 flex justify-center items-center shadow-sm "><p class="text-blue-300 font-semibold text-xl ">2</p></div>
+                  <div>
+                    <p class="font-semibold text-lg text-Cool_gray capitalize">step 2</p>
+                    <p  class="uppercase text-sm text-White font-medium ">your information</p>
+                  </div>
+                </div>
+                <div class="flex gap-4 ">
+                  <div class="bg-Light_blue  rounded-full w-10 h-10 flex justify-center items-center shadow-sm "><p class="text-blue-300 font-semibold text-xl ">3</p></div>
+                  <div>
+                    <p class="font-semibold text-lg text-Cool_gray capitalize">step 3</p>
+                    <p  class="uppercase text-sm text-White font-medium  ">your information</p>
+                  </div>
+                </div>
+                <div class="flex gap-4 ">
+                  <div class="bg-Light_blue  rounded-full w-10 h-10 flex justify-center items-center shadow-sm "><p class="text-blue-300 font-semibold text-xl ">4</p></div>
+                  <div>
+                    <p class="font-semibold text-lg text-Cool_gray capitalize">step 4</p>
+                    <p  class="uppercase text-sm text-White font-medium ">your information</p>
+                  </div>
+                </div>
+              </div>
+        <!-- form section -->
+        <div>
+            <form class="max-w-sm mx-auto">
+                <div class="mb-5">
+                  <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
+                  <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="name@flowbite.com" required>
+                </div>
+                <div class="mb-5">
+                  <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your password</label>
+                  <input type="password" id="password" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" required>
+                </div>
+                <div class="mb-5">
+                  <label for="repeat-password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Repeat password</label>
+                  <input type="password" id="repeat-password" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" required>
+                </div>
+                <div class="flex items-start mb-5">
+                  <div class="flex items-center h-5">
+                    <input id="terms" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" required>
+                  </div>
+                  <label for="terms" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">I agree with the <a href="#" class="text-blue-600 hover:underline dark:text-blue-500">terms and conditions</a></label>
+                </div>
+                <div class="flex justify-end w-full">  <button type="submit" class="text-white bg-blue-950 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 capitalize">next step</button></div>
+            </form>
+        </div>
+      </section>
     </main>
     <footer></footer>
-</body>
+  </body>
 </html>
+
+
+
+
+<!-- 
+    <form class="max-w-sm mx-auto">
+    <div class="mb-5">
+      <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
+      <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="name@flowbite.com" required>
+    </div>
+    <div class="mb-5">
+      <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your password</label>
+      <input type="password" id="password" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" required>
+    </div>
+    <div class="mb-5">
+      <label for="repeat-password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Repeat password</label>
+      <input type="password" id="repeat-password" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" required>
+    </div>
+    <div class="flex items-start mb-5">
+      <div class="flex items-center h-5">
+        <input id="terms" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" required>
+      </div>
+      <label for="terms" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">I agree with the <a href="#" class="text-blue-600 hover:underline dark:text-blue-500">terms and conditions</a></label>
+    </div>
+    <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Register new account</button>
+  </form>
+ -->
