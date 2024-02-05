@@ -8,7 +8,7 @@
   </head>
   <body class="h-screen w-full bg-Magnolia ">
     <header></header>
-    <main class="flex justify-center w-full hfu">
+    <main class="flex justify-center w-full h-full">
       <section class="flex items-center gap-10 justify-evenly  h-screen w-3/5   bg-white ml-4 mr-4">
               <div class="w-full  h-4/5  info flex flex-col pl-4 py-5   gap-8 ml-6  ">
                   <style>
@@ -18,28 +18,28 @@
                       }
                   </style>
                 <div class="flex gap-4 ">
-                  <div class="bg-Light_blue  rounded-full w-10 h-10 flex justify-center items-center shadow-sm "><p class="text-blue-300 font-semibold text-xl ">1</p></div>
+                  <div class="border-white border-2   rounded-full w-10 h-10 flex justify-center items-center shadow-sm "><p class="text-blue-300 font-semibold text-xl ">1</p></div>
                   <div>
                     <p class="font-semibold text-lg text-Cool_gray capitalize">step 1</p>
                     <p class="uppercase text-sm text-White  font-medium ">your info</p>
                   </div>
                 </div>
                 <div class="flex gap-4 ">
-                  <div class="border-white border-2  rounded-full w-10 h-10 flex justify-center items-center shadow-sm "><p class="text-blue-300 font-semibold text-xl ">2</p></div>
+                  <div class=" bg-Light_blue  rounded-full w-10 h-10 flex justify-center items-center shadow-sm "><p class="text-blue-300 font-semibold text-xl ">2</p></div>
                   <div>
                     <p class="font-semibold text-lg text-Cool_gray capitalize">step 2</p>
                     <p  class="uppercase text-sm text-White font-medium ">your information</p>
                   </div>
                 </div>
                 <div class="flex gap-4 ">
-                  <div class="border-white border-2  rounded-full w-10 h-10 flex justify-center items-center shadow-sm "><p class="text-blue-300 font-semibold text-xl ">3</p></div>
+                  <div class="border-white border-2   rounded-full w-10 h-10 flex justify-center items-center shadow-sm "><p class="text-blue-300 font-semibold text-xl ">3</p></div>
                   <div>
                     <p class="font-semibold text-lg text-Cool_gray capitalize">step 3</p>
                     <p  class="uppercase text-sm text-White font-medium  ">your information</p>
                   </div>
                 </div>
                 <div class="flex gap-4 ">
-                  <div class="border-white border-2  rounded-full w-10 h-10 flex justify-center items-center shadow-sm "><p class="text-blue-300 font-semibold text-xl ">4</p></div>
+                  <div class="border-white border-2   rounded-full w-10 h-10 flex justify-center items-center shadow-sm "><p class="text-blue-300 font-semibold text-xl ">4</p></div>
                   <div>
                     <p class="font-semibold text-lg text-Cool_gray capitalize">step 4</p>
                     <p  class="uppercase text-sm text-White font-medium ">your information</p>
@@ -47,28 +47,51 @@
                 </div>
               </div>
         <!-- form section -->
-        <div class="w-full">
+        <div class="w-full mr-2 ml-2 ">
             <div class="flex flex-col gap-4 mb-6 ">
-              <p class="text-2xl capitalize text-Marine_blue font-extrabold ">personal information</p>
-              <p class="text-xs font-thin text-Marine_blue ">please provide your name , email address and phone number</p>
+              <p class="text-2xl capitalize text-Marine_blue font-extrabold ">select your plan</p>
+              <p class="text-xs font-medium  text-Marine_blue ">you have the option of monthly or yearly billing</p>
             </div>
-            <form class="w-5/6 ">
-                <div class="mb-5">
-                  <label for="text" class="block mb-2 text-sm font-medium text-Marine_blue capitalize">name</label>
-                  <input type="text" id="email" class="placeholder:capitalize  shadow-sm bg-gray-50 border border-gray-300 text-Marine_blue text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"  placeholder="e.g hopeson" required>
+            <!-- decision grid  -->
+            <section class="flex gap-6 ">
+              <div class="pl-2 py-2  border-solid border-2 hover:border-sky-500 rounded-md shadow-md hover:shadow-lg h-36 w-36 flex flex-col gap-8 cursor-pointer  ">
+                <img class="w-10 " src="./images/icon-arcade.svg" alt="icon-arcade" srcset="">
+                <div class="">
+                  <p class=" capitalize font-semibold text-lg  text-Marine_blue">arcade</p>
+                  <p class="font-light text-sm text-Pastel_blue">$9/mo</p>
                 </div>
-                <div class="mb-5">
-                  <label for="email" class="block mb-2 text-sm font-medium text-Marine_blue capitalize">email address</label>
-                  <input type="email" id="password" class="placeholder:capitalize  shadow-sm bg-gray-50 border border-gray-300 text-Marine_blue text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"  placeholder="e.g name@flowbite.com" required>
+              </div>
+              <div class="pl-2 py-2  border-solid border-2 hover:border-sky-500 rounded-md shadow-md hover:shadow-lg h-36 w-36 flex flex-col gap-8 cursor-pointer ">
+                <img class="w-10 " src="./images/icon-advanced.svg" alt="icon-advanced" srcset="">
+                <div>
+                  <p class=" capitalize font-semibold text-lg  text-Marine_blue">advance</p>
+                  <p class="font-light text-sm text-Pastel_blue">$12/mo</p>
                 </div>
-                <div class="mb-5">
-                  <label for="number" class="block mb-2 text-sm font-medium text-Marine_blue capitalize">phone number</label>
-                  <input type="number" id="repeat-password" class="placeholder:capitalize  shadow-sm bg-gray-50 border border-gray-300 text-Marine_blue text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"  placeholder="e.g 093434234245" required>
+              </div>
+              <div class="pl-2 py-2  border-solid border-2 hover:border-sky-500 rounded-md shadow-md hover:shadow-lg h-36 w-36 flex flex-col gap-8 cursor-pointer ">
+                <img class="w-10 " src="./images/icon-pro.svg" alt="icon-pro" srcset="">
+                <div>
+                  <p class=" capitalize font-semibold text-lg  text-Marine_blue">pro</p>
+                  <p class="font-light text-sm text-Pastel_blue">$15/mo</p>
                 </div>
-                
-                <div class="flex justify-end w-full">  <button type="submit" class="text-white bg-blue-950 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 capitalize">next step</button></div>
-            </form>
-        </div>
+              </div>
+            </section>
+            <!-- toggle -->
+            <section class="flex w-full h-full justify-center mt-8 gap-6 ">
+                 <span class="ms-3 text-sm  dark:text-gray-300 capitalize font-medium text-Marine_blue">monthly</span>
+                  <label class="relative inline-flex items-center cursor-pointer ">
+                      <input type="checkbox" value="" class="sr-only peer">
+                     <div class="w-12  h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+                  </label>
+                  <span class="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300 capitalize ">yearly</span>
+             </section>
+
+             <!-- nav section -->
+               <section class="flex justify-between w-full mt-12 ">
+                <div class=""> <a class=" capitalize font-semibold text-lg  text-Marine_blue" href="index.html" target="_self">go back</a></div>
+                <div class="">  <button type="submit" class="text-white bg-blue-950 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 capitalize">next step</button></div>
+               </section>
+            </div>
       </section>
     </main>
     <footer></footer>
