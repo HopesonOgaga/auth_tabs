@@ -17,22 +17,30 @@ const info_val = {
 arcade.addEventListener("click", function () {
   const value = info_val.arcade_value;
   localStorage.setItem("value", JSON.stringify(value)); // Store value in local storage
+  console.log(value);
 });
 
 advance.addEventListener("click", function () {
   const value = info_val.advance_value;
   localStorage.setItem("value", JSON.stringify(value)); // Store value in local storage
+  console.log(value);
 });
 
 pro.addEventListener("click", function () {
   const value = info_val.pro_value;
   localStorage.setItem("value", JSON.stringify(value)); // Store value in local storage
-});
-
-next_button.addEventListener("click", function () {
-  location.href = "./pick.html"; // Navigate to the next page
+  console.log(value);
 });
 
 toggle_btn.addEventListener("click", function () {
-  arcade_free.classList.toggle("hidden"); // Toggle visibility of arcade button
+  console.log('hello click');
+  if (arcade_free.classList.contains("hidden")) {
+    arcade_free.classList.toggle("hidden"); // Toggle visibility of arcade button
+  } 
+});
+
+// next location
+next_button.addEventListener("click", function () {
+   
+  location.href = "./pick.html"; // Navigate to the next page
 });
