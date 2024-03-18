@@ -83,12 +83,57 @@
               
             </section>
             <!-- toggle -->
-            <section class="flex w-full h-full justify-center mt-8 gap-6 ">
+            <section class="flex w-full h-full justify-center mt-8 gap-6 test-btn">
                  <span class="ms-3 text-sm  dark:text-gray-300 capitalize font-medium text-Marine_blue">monthly</span>
-                  <label class="relative inline-flex items-center cursor-pointer " id="toggle-btn">
-                      <input type="checkbox" value="" class="sr-only peer">
-                     <div class="w-12  h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
-                  </label>
+                 <label class="toggle" for="myToggle">
+                  <input class="toggle__input" name="" type="checkbox" id="myToggle">
+                  <div class="toggle__fill"></div>
+              </label>
+                    <style>
+                                          .toggle {
+                            --width: 50px;
+                            --height: calc(var(--width) / 2);
+                            --border-radius: calc(var(--height) / 2);
+
+                            display: inline-block;
+                            cursor: pointer;
+                          }
+
+                          .toggle__input {
+                            display: none;
+                          }
+
+                          .toggle__fill {
+                            position: relative;
+                            width: var(--width);
+                            height: var(--height);
+                            border-radius: var(--border-radius);
+                            background: #dddddd;
+                            transition: background 0.2s;
+                          }
+
+                          .toggle__input:checked ~ .toggle__fill {
+                            background: hsl(206, 94%, 87%);
+                          }
+
+                          .toggle__fill::after {
+                            content: "";
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            height: var(--height);
+                            width: var(--height);
+                            background: #ffffff;
+                            box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+                            border-radius: var(--border-radius);
+                            transition: transform 0.2s;
+                          }
+
+                          .toggle__input:checked ~ .toggle__fill::after {
+                            transform: translateX(var(--height));
+                          }
+
+                  </style>
                   <span class="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300 capitalize ">yearly</span>
              </section>
 

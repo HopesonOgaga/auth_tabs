@@ -5,8 +5,8 @@ const pro = document.getElementById("pro");
 const next_button = document.getElementById("next");
 const toggle_btn = document.getElementById("toggle-btn");
 //
-const arcade_free = document.querySelector(".arcade-free");
-
+const arcade_free = document.querySelector('.arcade-free')
+const toggle = document.querySelector(".toggle__input");
 // value data
 const info_val = {
   pro_value: 15,
@@ -32,15 +32,12 @@ pro.addEventListener("click", function () {
   console.log(value);
 });
 
-toggle_btn.addEventListener("click", function () {
-  console.log('hello click');
-  if (arcade_free.classList.contains("hidden")) {
-    arcade_free.classList.toggle("hidden"); // Toggle visibility of arcade button
-  } 
-});
-
-// next location
-next_button.addEventListener("click", function () {
-   
-  location.href = "./pick.html"; // Navigate to the next page
+//toggle button
+toggle.addEventListener("change", function () {
+  // Checking if the toggle is checked
+  if (toggle.checked) {
+      arcade_free.classList.remove('hidden'); // Remove the 'hidden' class to show the element
+  } else {
+      arcade_free.classList.add('hidden'); // Add the 'hidden' class to hide the element
+  }
 });
