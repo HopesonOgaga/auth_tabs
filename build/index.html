@@ -1,112 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/output.css" />
-    <script src="./js/main.js" defer></script>
-  </head>
-  <body class="h-screen w-full md:bg-Magnolia ">
-    <header></header>
-    <main class="flex justify-center w-full ">
-      <section class="flex flex-col md:flex-row items-center md:gap-10 justify-evenly  h-screen md:w-3/5 w-screen   bg-white ml-4 mr-4">
-              <div class="w-full h-full m-image info md:h-4/5  md:info flex md:flex-col pl-4 py-5 justify-evenly  md:gap-8 md:ml-6  ">
-                  <style>
-                      .info{
-                          background-image: url('./images/bg-sidebar-desktop.svg');
-                          background-repeat: no-repeat;
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Document</title>
+<link rel="stylesheet" href="./css/output.css" />
+<script src="./js/main.js" defer></script>
+<style>
+    .info {
+        background-image: url('./images/bg-sidebar-desktop.svg');
+        background-repeat: no-repeat;
+    }
 
-                      }
-
-                      @media screen and (max-width: 480px) {
-                        .m-image{
-                        background-image: url('./images/bg-sidebar-mobile.svg');
-                          background-repeat: no-repeat;
-                      }
-                        }
-                  </style>
-                <div class="flex md:gap-4  ">
-                  <div class="bg-Light_blue  rounded-full w-10 h-10 flex justify-center items-center shadow-sm "><p class="text-blue-300 font-semibold text-xl ">1</p></div>
-                  <div>
-                    <p class="font-semibold text-lg text-Cool_gray capitalize hidden  md:block ">step 1</p>
-                    <p class="uppercase text-sm text-White  font-medium hidden  md:block  ">your info</p>
-                  </div>
+    @media screen and (max-width: 480px) {
+        .info {
+            background-image: url('./images/bg-sidebar-mobile.svg');
+        }
+    }
+</style>
+</head>
+<body class="w-full md:bg-Magnolia">
+<header></header>
+<main class="flex justify-center w-full md:h-full">
+    <section class="flex flex-col md:flex-row items-center md:gap-10 justify-evenly h-screen md:w-3/5 w-screen bg-white ml-4 mr-4">
+        <div class="w-full h-full m-image info md:h-4/5 md:info flex md:flex-col pl-4 py-5 justify-evenly md:gap-8 md:ml-6">
+            <div class="flex md:gap-4">
+                <div class="bg-Light_blue rounded-full w-10 h-10 flex justify-center items-center shadow-sm">
+                    <p class="text-blue-300 font-semibold text-xl">1</p>
                 </div>
-                <div class="flex md:gap-4 ">
-                  <div class="border-white border-2  rounded-full w-10 h-10 flex justify-center items-center shadow-sm "><p class="text-blue-300 font-semibold text-xl ">2</p></div>
-                  <div>
-                    <p class="font-semibold text-lg text-Cool_gray capitalize hidden  md:block ">step 2</p>
-                    <p  class="uppercase text-sm text-White font-medium hidden md:block">select plan</p>
-                  </div>
+                <div>
+                    <p class="font-semibold text-lg text-Cool_gray capitalize hidden md:block">step 1</p>
+                    <p class="uppercase text-sm text-White font-medium hidden md:block">your info</p>
                 </div>
-                <div class="flex md:gap-4 ">
-                  <div class="border-white border-2  rounded-full w-10 h-10 flex justify-center items-center shadow-sm "><p class="text-blue-300 font-semibold text-xl ">3</p></div>
-                  <div>
-                    <p class="font-semibold text-lg text-Cool_gray capitalize hidden  md:block ">step 3</p>
-                    <p  class="uppercase text-sm text-White font-medium hidden md:block">ads-on</p>
-                  </div>
-                </div>
-                <div class="flex md:gap-4 ">
-                  <div class="border-white border-2  rounded-full w-10 h-10 flex justify-center items-center shadow-sm "><p class="text-blue-300 font-semibold text-xl ">4</p></div>
-                  <div>
-                    <p class="font-semibold text-lg text-Cool_gray capitalize hidden  md:block ">step 4</p>
-                    <p  class="uppercase text-sm text-White font-medium hidden md:block">summary</p>
-                  </div>
-                </div>
-              </div>
-        <!-- form section -->
-        <div class="w-full pr-2 pl-2">
-            <div class="flex flex-col gap-4 mb-6 ">
-              <p class="text-2xl capitalize text-Marine_blue font-extrabold ">personal information</p>
-              <p class="text-xs font-thin text-Marine_blue ">please provide your name , email address and phone number</p>
             </div>
-            <form class="w-5/6 " id="form-submit">
+            <div class="flex md:gap-4">
+                <div class="border-white border-2 rounded-full w-10 h-10 flex justify-center items-center shadow-sm">
+                    <p class="text-blue-300 font-semibold text-xl">2</p>
+                </div>
+                <div>
+                    <p class="font-semibold text-lg text-Cool_gray capitalize hidden md:block">step 2</p>
+                    <p class="uppercase text-sm text-White font-medium hidden md:block">select plan</p>
+                </div>
+            </div>
+            <div class="flex md:gap-4">
+                <div class="border-white border-2 rounded-full w-10 h-10 flex justify-center items-center shadow-sm">
+                    <p class="text-blue-300 font-semibold text-xl">3</p>
+                </div>
+                <div>
+                    <p class="font-semibold text-lg text-Cool_gray capitalize hidden md:block">step 3</p>
+                    <p class="uppercase text-sm text-White font-medium hidden md:block">ads-on</p>
+                </div>
+            </div>
+            <div class="flex md:gap-4">
+                <div class="border-white border-2 rounded-full w-10 h-10 flex justify-center items-center shadow-sm">
+                    <p class="text-blue-300 font-semibold text-xl">4</p>
+                </div>
+                <div>
+                    <p class="font-semibold text-lg text-Cool_gray capitalize hidden md:block">step 4</p>
+                    <p class="uppercase text-sm text-White font-medium hidden md:block">summary</p>
+                </div>
+            </div>
+        </div>
+        <!-- form section -->
+        <div class="w-full md:h-2/3 md:py-4  h-full pr-2 pl-2 bg-white rounded-sm shadow-md absolute top-36 md:static md:block">
+            <div class="flex flex-col gap-4 mb-6">
+                <p class="text-2xl capitalize text-Marine_blue font-extrabold">personal information</p>
+                <p class="text-xs font-thin text-Marine_blue">please provide your name, email address, and phone number</p>
+            </div>
+            <form class="w-5/6" id="form-submit">
                 <div class="mb-5">
-                  <label for="text" class="block mb-2 text-sm font-medium text-Marine_blue capitalize">name</label>
-                  <input type="text" id="name" class="placeholder:capitalize  shadow-sm bg-gray-50 border border-gray-300 text-Marine_blue text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"  placeholder="e.g hopeson" required>
+                    <label for="text" class="block mb-2 text-sm font-medium text-Marine_blue capitalize">name</label>
+                    <input type="text" id="name" class="placeholder:capitalize shadow-sm bg-gray-50 border border-gray-300 text-Marine_blue text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="e.g hopeson" required>
                 </div>
                 <div class="mb-5">
-                  <label for="email" class="block mb-2 text-sm font-medium text-Marine_blue capitalize">email address</label>
-                  <input type="email" id="email-address" class="placeholder:capitalize  shadow-sm bg-gray-50 border border-gray-300 text-Marine_blue text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"  placeholder="e.g name@flowbite.com" required>
+                    <label for="email" class="block mb-2 text-sm font-medium text-Marine_blue capitalize">email address</label>
+                    <input type="email" id="email-address" class="placeholder:capitalize shadow-sm bg-gray-50 border border-gray-300 text-Marine_blue text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="e.g name@flowbite.com" required>
                 </div>
                 <div class="mb-5">
-                  <label for="number" class="block mb-2 text-sm font-medium text-Marine_blue capitalize">phone number</label>
-                  <input type="number" id="phone-number" class="placeholder:capitalize  shadow-sm bg-gray-50 border border-gray-300 text-Marine_blue text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"  placeholder="e.g 093434234245" required>
+                    <label for="number" class="block mb-2 text-sm font-medium text-Marine_blue capitalize">phone number</label>
+                    <input type="number" id="phone-number" class="placeholder:capitalize shadow-sm bg-gray-50 border border-gray-300 text-Marine_blue text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="e.g 093434234245" required>
                 </div>
-                
-                <div class="flex justify-end w-full">  <button type="submit" id="submit" class="text-white bg-blue-950 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 capitalize">next step</button></div>
+                <div class="flex justify-end w-full">
+                    <button type="submit" id="submit" class="text-white bg-blue-950 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 capitalize">next step</button>
+                </div>
             </form>
         </div>
-      </section>
-    </main>
-    <footer></footer>
-  </body>
+    </section>
+</main>
+<footer></footer>
+</body>
 </html>
-
-
-
-
-<!-- 
-    <form class="max-w-sm mx-auto">
-    <div class="mb-5">
-      <label for="email" class="block mb-2 text-sm font-medium text-Marine_blue dark:text-white">Your email</label>
-      <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-Marine_blue text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="name@flowbite.com" required>
-    </div>
-    <div class="mb-5">
-      <label for="password" class="block mb-2 text-sm font-medium text-Marine_blue dark:text-white">Your password</label>
-      <input type="password" id="password" class="shadow-sm bg-gray-50 border border-gray-300 text-Marine_blue text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" required>
-    </div>
-    <div class="mb-5">
-      <label for="repeat-password" class="block mb-2 text-sm font-medium text-Marine_blue dark:text-white">Repeat password</label>
-      <input type="password" id="repeat-password" class="shadow-sm bg-gray-50 border border-gray-300 text-Marine_blue text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" required>
-    </div>
-    <div class="flex items-start mb-5">
-      <div class="flex items-center h-5">
-        <input id="terms" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" required>
-      </div>
-      <label for="terms" class="ms-2 text-sm font-medium text-Marine_blue dark:text-gray-300">I agree with the <a href="#" class="text-blue-600 hover:underline dark:text-blue-500">terms and conditions</a></label>
-    </div>
-    <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Register new account</button>
-  </form>
- -->
