@@ -6,52 +6,66 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/output.css" />
     <script  src="./js/plan.js" defer></script>
+    <style>
+      .info {
+          background-image: url('./images/bg-sidebar-desktop.svg');
+          background-repeat: no-repeat;
+          background-size: cover;
+      }
+  
+      @media screen and (max-width: 480px) {
+          .info {
+              background-image: url('./images/bg-sidebar-mobile.svg');
+          }
+      }
+  </style>
   </head>
-  <body class="h-screen w-full bg-Magnolia ">
-    <header></header>
+  <body class="h-full w-full bg-Magnolia ml-4 mr-4  ">
     <main class="flex justify-center w-full h-full">
-      <section class="flex md:flex-row flex-col items-center gap-10 justify-evenly  h-screen md:w-3/5 w-full   bg-white ml-4 mr-4">
-              <div class="w-full  h-4/5  info flex flex-col pl-4 py-5   gap-8 ml-6  ">
-                  <style>
-                      .info{
-                          background-image: url('./images/bg-sidebar-desktop.svg');
-                          background-repeat: no-repeat;
-                      }
-                  </style>
-                <div class="flex gap-4 ">
-                  <div class="border-white border-2   rounded-full w-10 h-10 flex justify-center items-center shadow-sm "><p class="text-blue-300 font-semibold text-xl ">1</p></div>
-                  <div>
-                    <p class="font-semibold text-lg text-Cool_gray capitalize">step 1</p>
-                    <p class="uppercase text-sm text-White  font-medium ">your info</p>
-                  </div>
+      <section class="flex md:flex-row flex-col items-center md:gap-10 justify-evenly  md:h-screen md:w-3/5   bg-white ">
+               <div class="w-full   m-image info md:h-4/5  flex md:flex-col md:pl-4 md:py-5 py-10 justify-evenly md:gap-8 md:ml-6">
+                <div class="flex md:gap-4">
+                    <div class="border-white border-2 rounded-full w-10 h-10 flex justify-center items-center shadow-sm">
+                        <p class="text-blue-300 font-semibold text-xl">1</p>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-lg text-Cool_gray capitalize hidden md:block">step 1</p>
+                        <p class="uppercase text-sm text-White font-medium hidden md:block ">your info</p>
+                    </div>
                 </div>
-                <div class="flex gap-4 ">
-                  <div class=" bg-Light_blue  rounded-full w-10 h-10 flex justify-center items-center shadow-sm "><p class="text-blue-300 font-semibold text-xl ">2</p></div>
-                  <div>
-                    <p class="font-semibold text-lg text-Cool_gray capitalize">step 2</p>
-                    <p  class="uppercase text-sm text-White font-medium ">your information</p>
-                  </div>
+                <div class="flex md:gap-4">
+                    <div class="bg-Light_blue  border-2 rounded-full w-10 h-10 flex justify-center items-center shadow-sm">
+                        <p class="text-blue-300 font-semibold text-xl">2</p>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-lg text-Cool_gray capitalize hidden md:block">step 2</p>
+                        <p class="uppercase text-sm text-White font-medium hidden md:block">select plan</p>
+                    </div>
                 </div>
-                <div class="flex gap-4 ">
-                  <div class="border-white border-2   rounded-full w-10 h-10 flex justify-center items-center shadow-sm "><p class="text-blue-300 font-semibold text-xl ">3</p></div>
-                  <div>
-                    <p class="font-semibold text-lg text-Cool_gray capitalize">step 3</p>
-                    <p  class="uppercase text-sm text-White font-medium  ">your information</p>
-                  </div>
+                <div class="flex md:gap-4">
+                    <div class="border-white border-2 rounded-full w-10 h-10 flex justify-center items-center shadow-sm">
+                        <p class="text-blue-300 font-semibold text-xl">3</p>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-lg text-Cool_gray capitalize hidden md:block">step 3</p>
+                        <p class="uppercase text-sm text-White font-medium hidden md:block">ads-on</p>
+                    </div>
                 </div>
-                <div class="flex gap-4 ">
-                  <div class="border-white border-2   rounded-full w-10 h-10 flex justify-center items-center shadow-sm "><p class="text-blue-300 font-semibold text-xl ">4</p></div>
-                  <div>
-                    <p class="font-semibold text-lg text-Cool_gray capitalize">step 4</p>
-                    <p  class="uppercase text-sm text-White font-medium ">your information</p>
-                  </div>
+                <div class="flex md:gap-4">
+                    <div class="border-white border-2 rounded-full w-10 h-10 flex justify-center items-center shadow-sm">
+                        <p class="text-blue-300 font-semibold text-xl">4</p>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-lg text-Cool_gray capitalize hidden md:block">step 4</p>
+                        <p class="uppercase text-sm text-White font-medium hidden md:block">summary</p>
+                    </div>
                 </div>
-              </div>
+            </div>
         <!-- form section -->
-        <div class="md:w-full w-full mr-2 ml-2  ">
-            <div class="flex flex-col gap-4 mb-6 pl-4 mt-4 ">
-              <p class="md:text-2xl text-3xl capitalize text-Marine_blue font-extrabold ">select your plan</p>
-              <p class="md:text-xs text-xl md:font-medium font-semibold capitalize  text-Light_gray md:text-Marine_blue ">you have the option of monthly or yearly billing</p>
+        <div class="md:w-full w-full mr-2 ml-2   pl-2 pr-2">
+            <div class="flex flex-col gap-4 mb-6 ">
+              <p class="text-2xl capitalize text-Marine_blue font-extrabold ">select your plan</p>
+              <p class="md:text-xs text-xl md:font-medium font-semibold  text-Light_gray md:text-Marine_blue ">you have the option of monthly or yearly billing</p>
             </div>
             <!-- decision grid  -->
             <section class="flex md:gap-6 md:flex-row  flex-col  ">
